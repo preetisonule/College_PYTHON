@@ -1,0 +1,17 @@
+# parent class function is overrided by child class.
+
+class Animal:
+    def sound(self):
+        return "Some generic sound"
+
+class Dog(Animal):
+    def sound(self):
+        return "Bark"
+
+class Cat(Animal):
+    def sound(self):
+        return "Meow"
+
+animals = [Dog(), Cat(), Animal()]
+for animal in animals:
+    print(animal.sound())
